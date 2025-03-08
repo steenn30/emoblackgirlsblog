@@ -1,0 +1,160 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+.no-indent {
+  margin-left: 0;
+  padding-left: 0;
+  list-style-position: inside; /* Optional: Aligns list numbers with text */
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+.article {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.article-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.article-header h1 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.article-header .author {
+  font-size: 1rem;
+  color: #777;
+}
+
+.article-body {
+  margin-bottom: 20px;
+}
+
+.article-body h2 {
+  font-size: 2rem;
+  margin-top: 20px;
+}
+
+.article-footer {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.article-footer .social-media-links a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+h2 {
+  list-style-type: none;
+  counter-reset: none;
+}
+
+h2::before {
+  content: none;
+}
+
+.article-body ol {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+/* Make the banner fixed at the top */
+.banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure the banner stays on top of other content */
+  background-color: #fff; /* Optional: Set a background to make sure it stays visible */
+  height: 60px; /* Adjust this value according to the actual height of your banner */
+}
+
+/* Ensure the body content is pushed down below the fixed banner */
+body {
+  margin: 0;
+  padding-top: 60px; /* Add padding to make space for the fixed banner */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+/* For the article container, make sure the content does not overlap */
+.article-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 20px; /* Additional space to make the article more readable */
+}
+
+
