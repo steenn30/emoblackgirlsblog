@@ -87,7 +87,12 @@ const StockTrending = () => {
   return (
     <div style={{ textAlign: "center", padding: "20px", maxWidth: "1200px", margin: "0 auto" }}>
       <h1>Stock Quotes</h1>
-      <p>Last Updated: {lastUpdated || "Loading..."}</p>
+      <p style={{
+  textAlign: "center",
+  margin: "20px 0", // You can adjust this for spacing if needed
+  fontSize: "18px", // Adjust the font size if necessary
+  color: "white" // Set text color if you want to match the overall style
+}}>Last Updated: {lastUpdated || "Loading..."}</p>
       <table border="1" cellPadding="10" style={{ margin: "auto", borderCollapse: "collapse" }}>
         <thead>
           <tr>

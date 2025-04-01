@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const ClickableGridItem = ({ article }) => {
     return (
-        <Link to={`/article/${article.id}`} className="cursor-pointer overflow-hidden shadow-md hover:shadow-lg transition">
+      <Link to={`/article/${article.slug}`} className="cursor-pointer overflow-hidden shadow-md hover:shadow-lg transition">
           <Card>
             {article.image ? (
               <div className="relative w-full h-48">
